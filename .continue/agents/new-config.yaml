@@ -1,0 +1,35 @@
+name: Bonsai Claude Config
+version: 1.0.0
+schema: v1
+
+models:
+  # Основная модель Claude 4.5 (Stealth Mode)
+  - name: Claude 4.5 (Bonsai)
+    provider: anthropic
+    model: anthropic/claude-sonnet-4.5
+    apiKey: sk_cr_HdDybi9oMSNKf2xXF9BgSpBkttTZnPk3uMsiBeGMsPmj
+    apiBase: https://api.trybons.ai
+
+  # Мощная модель Opus
+  - name: Claude 4 Opus (Bonsai)
+    provider: anthropic
+    model: anthropic/claude-opus-4
+    apiKey: sk_cr_HdDybi9oMSNKf2xXF9BgSpBkttTZnPk3uMsiBeGMsPmj
+    apiBase: https://api.trybons.ai
+
+  # Экспериментальная модель 3.7
+  - name: Claude 3.7 (Bonsai)
+    provider: anthropic
+    model: anthropic/claude-3-7-sonnet
+    apiKey: sk_cr_HdDybi9oMSNKf2xXF9BgSpBkttTZnPk3uMsiBeGMsPmj
+    apiBase: https://api.trybons.ai
+
+# Настройка автодополнения (чтобы код подсказывался сам)
+tabAutocompleteModel:
+  name: Autocomplete
+  provider: anthropic
+  model: anthropic/claude-sonnet-4.5
+  apiKey: sk_cr_HdDybi9oMSNKf2xXF9BgSpBkttTZnPk3uMsiBeGMsPmj
+  apiBase: https://api.trybons.ai
+
+mcpServers: []
