@@ -17,7 +17,7 @@ import streamlit as st
 
 # ---------- Константы ----------
 
-_host = os.getenv("API_HOST", "127.0.0.1")
+_host = os.getenv("API_HOST", "localhost")
 _port = os.getenv("API_PORT", "8001")
 API_BASE_URL = f"http://{_host}:{_port}/api"
 
